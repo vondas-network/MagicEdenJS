@@ -1,0 +1,20 @@
+{
+  "name": "MagicEdenJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Konopka",
+  "license": "GNU",
+  "dependencies": {
+    "api": "^4.5.2",
+    "axios": "^1.6.7",
+    "cfonts": "^3.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "json-2-csv": "^5.0.1",
+    "ohta": "^0.0.6"
+  }
+}
