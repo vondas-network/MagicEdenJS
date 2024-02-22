@@ -14,7 +14,7 @@ const ohta = require('ohta');
 var express = require('express')
 const cfonts = require('cfonts');
 const sats = require("./lib/processSatUrl");
-const btc = require("./lib/processBtcListings");
+const btcListings = require("./lib/processBtcListings");
 const { rareSatsFilters } = require("./lib/rareSatsFilters");
  
 /**
@@ -42,7 +42,7 @@ const { rareSatsFilters } = require("./lib/rareSatsFilters");
 app.get('/magiceden/process-btc-listings', function(req, res) {  
     ohta.askOhtaAbout('info', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', "REQUEST");   
     var timeInterval = req.query.timeInterval;
-    var gg = btc.processBtcListings(timeInterval);
+    var gg = btcListings.processBtcListings(timeInterval);
     ohta.askOhtaAbout('info', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', "FUNCTION - processBtcListings");
     ohta.askOhtaAbout('info', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', "FUNCTION - processBtcListings - " + timeInterval);
     gg.then(function(data) {

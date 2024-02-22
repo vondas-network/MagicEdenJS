@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "d3300020-b003-4364-a9b2-a6dd77003a8f",
+		"name": "MagicEdenJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28585604",
+		"_collection_link": "https://blue-moon-356763.postman.co/workspace/LENSCRAFTER~baf1eb9e-021b-4654-9e1f-da352c32c939/collection/28585604-d3300020-b003-4364-a9b2-a6dd77003a8f?action=share&source=collection_link&creator=28585604"
+	},
+	"item": [
+		{
+			"name": "process-sat-url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/magiceden/process-sat-url?satType=Palindrome",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"magiceden",
+						"process-sat-url"
+					],
+					"query": [
+						{
+							"key": "satType",
+							"value": "Palindrome"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "process-btc-listings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/magiceden/process-btc-listings?timeInterval=6h",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"magiceden",
+						"process-btc-listings"
+					],
+					"query": [
+						{
+							"key": "timeInterval",
+							"value": "6h"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
