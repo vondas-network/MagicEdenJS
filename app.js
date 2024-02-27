@@ -16,6 +16,7 @@ const cfonts = require('cfonts');
 const sats = require("./lib/processSatUrl");
 const btcListings = require("./lib/processBtcListings");
 const { rareSatsFilters } = require("./lib/rareSatsFilters");
+const saver = require("./lib/processSaveJson");
  
 /**
  **************************
@@ -47,7 +48,16 @@ app.get('/magiceden/process-btc-listings', function(req, res) {
     ohta.askOhtaAbout('info', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', "FUNCTION - processBtcListings - " + timeInterval);
     gg.then(function(data) {
         ohta.askOhtaAbout('info', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', data);
-        res.send(data);
+    
+        let filename = "me-btclisting-" + timeInterval;
+        let closingObj = {}
+        closingObj.endpoint = "/magiceden/process-btc-listings";
+        closingObj.timeInterval = timeInterval;
+        closingObj.dataTime = Math.floor(Date.now());
+        closingObj.listings = data;
+    
+        saver.saveJSON(filename, closingObj);
+        res.send(closingObj);
     }).catch(err => {
         ohta.askOhtaAbout('error', 'MagicEdenJS', 'app.js - /magiceden/process-btc-listings', err);
     });
