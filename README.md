@@ -43,7 +43,12 @@ An API service for getting Rare Sats and Bitcoin Ordinal listing data from Magic
 
 ## API Functions
 
+
 ### processBtcListings
+
+<h3 align="center">
+  <img height="100%" width="100%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-BitcoinOrdinalListings.png?raw=true"/>
+</h3>
 
 #### Endpoint
 ```
@@ -136,6 +141,10 @@ An API service for getting Rare Sats and Bitcoin Ordinal listing data from Magic
 
 ### processSatUrl
 Search for a specific Rare Sats. Rare Sats are attributes, or "satributes," ascribed to different types of sats. Sats are the smallest unit of a Bitcoin, and satributes commemorate special moments like when a sat was mined or used in a transaction.
+
+<h3 align="center">
+  <img height="100%" width="100%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-RareSatsListings.png?raw=true"/>
+</h3>
 
 #### Endpoint
 ```
