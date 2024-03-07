@@ -5,10 +5,42 @@
   <img height="50%" width="50%" src="https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/050/700/original/Magic-Eden-Logo-Vector.png?1706565078"/>
 </h3>
 
-## Install
-``` npm i ```
+An API service for getting Rare Sats and Bitcoin Ordinal listing data from Magic Eden. 
 
-## Functions
+## What can this service do?
+* Aggregate Rare Sats listings on Magic Eden and filter by *sat type*
+* Aggregate Bitcoin Ordinal listings on Magic Eden and filter using a *time interval*
+* Load API image on another computer and *schedule requests* with cron
+
+
+## How does it work?
+
+### Build & Run Docker Image
+1. Build the Docker image
+	* ```docker build -t magicedenjs-api .```
+
+2. Run Docker image
+	* ```docker run -p 7100:7100 -v FILE_DIRECTORY_FOR_SAVING_FILES:/app/tmp magicedenjs-api:latest
+```
+
+### Load Docker Image
+
+1. Load Docker image
+	* ```docker load -i magicedenjs-api_latest.tar.gz```
+
+2. Run Docker image
+	*  ```docker run -p 7100:7100 -v FILE_DIRECTORY_FOR_SAVING_FILES:/app/tmp magicedenjs-api:latest```
+
+	
+### Local install
+1. Install dependencies
+	* ``` npm i ```
+
+2. Start project
+	* ```node app.js ```
+
+
+## API Functions
 
 ### processBtcListings
 
@@ -149,3 +181,9 @@ Search for a specific Rare Sats. Rare Sats are attributes, or "satributes," ascr
 }
 ```
 
+## How to save a new Docker image?
+1. Build Docker image
+	* ```docker build -t magicedenjs-api .```
+
+2. Save Docker image
+	* ```docker save magicedenjs-api:latest | gzip > magicedenjs-api_latest.tar.gz```

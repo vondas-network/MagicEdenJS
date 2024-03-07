@@ -1,0 +1,16 @@
+docker build -t magicedenjs-api .
+
+docker save magicedenjs-api:latest | gzip > magicedenjs-api_latest.tar.gz
+
+docker load -i magicedenjs-api_latest.tar.gz
+
+docker run -p 7100:7100 -v /Users/rr/Documents/SPLOOSH/vondas-network/MagicEdenJS/tmp:/app/tmp magicedenjs-api:latest
+
+
+1 1 * * 0  /usr/bin/curl --silent http://example.come/some.php &>/dev/null
+
+
+
+*/1 * * * *  /usr/bin/curl --silent 'http://localhost:7100/magiceden/process-btc-listings?timeInterval=1h' 
+
+curl --location 

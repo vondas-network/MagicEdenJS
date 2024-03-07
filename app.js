@@ -24,19 +24,19 @@ const saver = require("./lib/processSaveJson");
 ************************** 
 */
  var app = express()
- var port = 8888;
+ var port = 7100;
  var HOST = '0.0.0.0';
  
 /**
 **************************
-* DYNAMIC ****************
+* FUNCTIONS **************
 ************************** 
 */
 
 /**
  * /magiceden/process-btc-listings
  * @param timeInterval  
- * @description 
+ * @description Get the BTC listing data from Magic Eden using different intervals of time
  * 
 */
 
@@ -66,7 +66,7 @@ app.get('/magiceden/process-btc-listings', function(req, res) {
 /**
  * /magiceden/process-sat-url
  * @param satTypes  
- * @description 
+ * @description Data BTC Rare Sats data from Magic Eden using a type filter
  * 
 */
 

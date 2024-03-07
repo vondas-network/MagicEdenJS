@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  api:
+    networks:
+      - icnet
+    container_name: 'MagicEdenJS'
+    restart: always
+    build: ./
+    ports:
+      - "7100:7100"
+    # volumes:
+    #   - tmp:/app/tmp    
+networks:
+  icnet:
+    name: magiceden-intranet
+    external: false
+# volumes:
+#   tmp:

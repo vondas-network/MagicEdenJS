@@ -17,7 +17,7 @@
 					"host": [
 						"localhost"
 					],
-					"port": "8888",
+					"port": "7100",
 					"path": [
 						"magiceden",
 						"process-sat-url"
@@ -42,7 +42,7 @@
 					"host": [
 						"localhost"
 					],
-					"port": "8888",
+					"port": "7100",
 					"path": [
 						"magiceden",
 						"process-btc-listings"
