@@ -187,3 +187,22 @@ Search for a specific Rare Sats. Rare Sats are attributes, or "satributes," ascr
 
 2. Save Docker image
 	* ```docker save magicedenjs-api:latest | gzip > magicedenjs-api_latest.tar.gz```
+
+## Cron
+
+* Open *[crontab](https://www.geeksforgeeks.org/crontab-in-linux-with-examples/)*
+
+``` bash
+crontab -e
+```
+
+* Add a new *job*. Every 10 minutes, create an HTTP GET Request for the API service using cURL.  
+
+``` text 
+*/10 * * * * /usr/bin/curl --silent 'http://localhost:7100/magiceden/process-btc-listings?timeInterval=10m'
+```
+* Optionally, create a second *job* to track the HTTP GET Requests.
+
+``` text
+*/10 * * * * echo "JOB at $(date)" >> ~/Desktop/job-tracker.txt
+```
