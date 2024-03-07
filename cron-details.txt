@@ -1,8 +1,0 @@
-#
-# MagicEdenJS
-# Cron job server for Docker container
-# Every 10 minutes, use cURL to create a HTTP request 
-#
-
-*/10 * * * * /usr/bin/curl --silent 'http://localhost:7100/magiceden/process-btc-listings?timeInterval=10m'
-*/10 * * * * echo "JOB at $(date)" >> ~/Desktop/job-tracker.txt
