@@ -5,7 +5,7 @@
   <img height="50%" width="50%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-logo-1.png?raw=true"/>
 </h3>
 
-An API service for sourcing Rare Sats and Bitcoin Ordinal listing data from Magic Eden. 
+<p align="center"><em>An API service for sourcing Rare Sats and Bitcoin Ordinal listing data from Magic Eden. </em></p> 
 
 ## What can this service do?
 * Aggregate Rare Sats listings on Magic Eden and filter by *sat type*
