@@ -2,7 +2,7 @@
 
 
 <h3 align="center">
-  <img height="50%" width="50%" src="https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/050/700/original/Magic-Eden-Logo-Vector.png?1706565078"/>
+  <img height="50%" width="50%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-logo-1.png?raw=true"/>
 </h3>
 
 An API service for getting Rare Sats and Bitcoin Ordinal listing data from Magic Eden. 
