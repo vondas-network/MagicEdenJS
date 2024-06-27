@@ -1,8 +1,5 @@
-# MagicEdenJS
-
-
 <h3 align="center">
-  <img height="50%" width="50%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-logo-1.png?raw=true"/>
+  <img height="40%" width="40%" src="https://github.com/vondas-network/MagicEdenJS/blob/main/img/MagicEdenJS-logo-1.png?raw=true"/>
 </h3>
 
 <p align="center"><em>An API service for sourcing Rare Sats and Bitcoin Ordinal listing data from Magic Eden. </em></p> 
